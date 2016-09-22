@@ -17,6 +17,8 @@ def gameboard(board):
     print('-+-+-')
     print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
 
+# placement on the board and invalid moves on the board
+
 
 def ask_number(letter):
     """Ask for a number within the range 1-9."""
@@ -24,36 +26,56 @@ def ask_number(letter):
 # i got this from davis
 
     if response == "1":
-        if board['top-L'] != "X" or board['top-L'] != "O":
+        if board['top-L'] == "X" or board['top-L'] == "O":
+            print("non valid move")
+        else:
             board['top-L'] = letter
     elif response == "2":
-        if board['top-M'] != "X" or board['top-M'] != "O":
+        if board['top-M'] == "X" or board['top-M'] == "O":
+            print('non valid move')
+        else:
             board['top-M'] = letter
     elif response == "3":
-        if board['top-R'] != "X" or board['top-R'] != "O":
+        if board['top-R'] == "X" or board['top-R'] == "O":
+            print('non valid move')
+        else:
             board['top-R'] = letter
     elif response == "4":
-        if board['mid-L'] != "X" or board['mid-L'] != "O":
+        if board['mid-L'] == "X" or board['mid-L'] == "O":
+            print('non valid move')
+        else:
             board['mid-L'] = letter
     elif response == "5":
-        if board['mid-M'] != "X" or board['mid-M'] != "O":
+        if board['mid-M'] == "X" or board['mid-M'] == "O":
+            print('non valid move')
+        else:
             board['mid-M'] = letter
     elif response == "6":
-        if board['mid-R'] != "X" or board['mid-R'] != "O":
+        if board['mid-R'] == "X" or board['mid-R'] == "O":
+            print('non valid move')
+        else:
             board['mid-R'] = letter
     elif response == "7":
-        if board['low-L'] != "X" or board['top-L'] != "O":
+        if board['low-L'] == "X" or board['low-L'] == "O":
+            print('non valid move')
+        else:
             board['low-L'] = letter
     elif response == "8":
-        if board['low-M'] != "X" or board['low-M'] != "O":
+        if board['low-M'] == "X" or board['low-M'] == "O":
+            print('non valid move')
+        else:
             board['low-M'] = letter
     elif response == "9":
-        if board['low-R'] != "X" or board['low-R'] != "O":
+        if board['low-R'] == "X" or board['low-R'] == "O":
+            print('non valid move')
+        else:
             board['low-R'] = letter
 
 
 def winning_conditions():
-    """Winning conditions can be across."""
+
+    '''def winning_conditions():'''
+"""Winning conditions can be across."""
 
 while True:
     gameboard(board)
