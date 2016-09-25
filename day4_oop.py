@@ -18,7 +18,7 @@ class Bike:
         self.color = new_color
 
     def get_layers(self):
-        return self._layers
+        return self.layers
 
 tyler = Person("tyler")
 joel = Person("joel")
